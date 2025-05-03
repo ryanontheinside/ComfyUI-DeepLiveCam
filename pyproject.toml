@@ -1,0 +1,15 @@
+[project]
+name = "deeplivecam"
+description = "This node integrates the face-swapping capabilities from Deep Live Cam into ComfyUI, allowing you to perform real-time face swapping on images and video streams."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["--extra-index-url https://download.pytorch.org/whl/cu118", "numpy>=1.23.5,<2", "typing-extensions>=4.8.0", "opencv-python==4.10.0.84", "cv2_enumerate_cameras==1.1.15", "onnx==1.16.0", "insightface==0.7.3", "psutil==5.9.8", "tk==0.1.0", "customtkinter==5.2.2", "pillow==11.1.0", "onnxruntime-silicon==1.16.3; sys_platform == 'darwin' and platform_machine == 'arm64'", "onnxruntime-gpu==1.16; sys_platform != 'darwin'", "tensorflow; sys_platform != 'darwin'", "opennsfw2==0.10.2", "protobuf==4.23.2"]
+
+[project.urls]
+Repository = "https://github.com/ryanontheinside/ComfyUI-DeepLiveCam"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-DeepLiveCam"
+Icon = ""
